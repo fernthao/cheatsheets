@@ -1,1 +1,10 @@
 ssh-copy-id username@hostname
+
+List hardware info:
+```
+inxi -Fxz 
+hwinfo --short
+lshw -short
+lscpu
+```
+inxi -F = full output, x adds details, z masks out personally identifying information like MAC and IP addresses.
