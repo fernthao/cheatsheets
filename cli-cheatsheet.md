@@ -1,14 +1,13 @@
-*copy ssh public key to remote server*
-ssh-copy-id username@hostname
+- Copy ssh public key to remote server  
+`ssh-copy-id username@hostname`
 
-*List hardware info*
+- List hardware info  
+  - inxi -F = full output, x adds details, z masks out personally identifying information like MAC and IP addresses.  
 ```
 inxi -Fxz 
 hwinfo --short
 lshw -short
 lscpu
 ```
-inxi -F = full output, x adds details, z masks out personally identifying information like MAC and IP addresses.
-
-*fuzzy find with side preview*
-fzf --preview 'cat --color=always {}'
+- Fuzzy find with side preview  
+`fzf --preview 'cat --color=always {}'`
