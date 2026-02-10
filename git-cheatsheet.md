@@ -9,6 +9,12 @@ Rebase and force push
     git pull --rebase origin master
     git push --force
 
+Force pull
+    git checkout master
+    git branch new-branch-to-save-current-commits
+    git fetch --all
+    git reset --hard origin/master
+
 Delete local:
 
     git branch -d <branch_name>
