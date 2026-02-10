@@ -10,6 +10,7 @@ Rebase and force push
     git push --force
 
 Force pull
+
     git checkout master
     git branch new-branch-to-save-current-commits
     git fetch --all
